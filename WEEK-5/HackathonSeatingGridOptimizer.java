@@ -3,6 +3,7 @@ public class HackathonSeatingGridOptimizer {
     public static double rowAverage(int[] row) {
         if (row == null || row.length == 0) {
             return 0.0;
+
         }
 
         int sum = 0;
@@ -35,9 +36,9 @@ public class HackathonSeatingGridOptimizer {
 
     public static void main(String[] args) {
         int[][] seatingScores = {
-            {40, 50, 45},
-            {85, 90, 95},
-            {30, 20, 25}
+                { 40, 50, 45 },
+                { 85, 90, 95 },
+                { 30, 20, 25 }
         };
 
         System.out.println(classifyRows(seatingScores, 60));

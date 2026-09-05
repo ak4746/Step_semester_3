@@ -1,91 +1,40 @@
-import java.util.Arrays;
-import java.util.Locale;
+import java.util.*;
+import java.util.stream.*;
 
-class Candidate implements Comparable<Candidate> {
-    private String name;
-    private double cgpa;
-    private int codingScore;
-
-    public Candidate(String name, double cgpa, int codingScore) {
-        this.name = name;
-        this.cgpa = cgpa;
-        this.codingScore = codingScore;
+record Candidate(String name, double cgpa, int codingScore) {
+    double score() {
+        return cgpa * 10.0 + codingScore * 0.5;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public double getCgpa() {
-        return cgpa;
-    }
-
-    public int getCodingScore() {
-        return codingScore;
-    }
-
-    public double getCompositeScore() {
-        return (cgpa * 10.0) + (codingScore * 0.5);
-    }
-
-    @Override
-    public int compareTo(Candidate other) {
-        return Double.compare(other.getCompositeScore(), this.getCompositeScore());
+    boolean isEligible() {
+        return cgpa >= 7.5 || (cgpa >= 6.5 && codingScore >= 60);
     }
 }
 
 public class PlacementDriveEngine {
 
-    public static boolean isEligible(double cgpa) {
-        return cgpa >= 7.5;
-    }
-
-    public static boolean isEligible(double cgpa, int codingScore) {
-        return isEligible(cgpa) || (cgpa >= 6.5 && codingScore >= 60);
-    }
-
     public static String shortlistAndRank(Candidate[] candidates) {
-        if (candidates == null || candidates.length == 0) {
+        if (candidates == null)
             return "";
-        }
 
-        int count = 0;
-        for (Candidate c : candidates) {
-            if (c != null && isEligible(c.getCgpa(), c.getCodingScore())) {
-                count++;
-            }
-        }
+        var valid = Arrays.stream(candidates)
+                .filter(c -> c != null && c.isEligible())
+                .sorted(Comparator.comparingDouble(Candidate::score).reversed())
+                .toList();
 
-        Candidate[] shortlisted = new Candidate[count];
-        int index = 0;
-        for (Candidate c : candidates) {
-            if (c != null && isEligible(c.getCgpa(), c.getCodingScore())) {
-                shortlisted[index++] = c;
-            }
-        }
-
-        Arrays.sort(shortlisted);
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < shortlisted.length; i++) {
-            Candidate c = shortlisted[i];
-            sb.append(String.format(Locale.US, "%d. %s (%.1f)", i + 1, c.getName(), c.getCompositeScore()));
-            if (i < shortlisted.length - 1) {
-                sb.append(" | ");
-            }
-        }
-
-        return sb.toString();
+        return IntStream.range(0, valid.size())
+                .mapToObj(i -> String.format(Locale.US, "%d. %s (%.1f)", i + 1, valid.get(i).name(),
+                        valid.get(i).score()))
+                .collect(Collectors.joining(" | "));
     }
 
     public static void main(String[] args) {
         Candidate[] candidates = {
-            new Candidate("Aisha", 8.2, 40),
-            new Candidate("Rohit", 6.8, 65),
-            new Candidate("Meena", 6.0, 90),
-            new Candidate("Karan", 7.5, 20)
+                new Candidate("Aisha", 8.2, 40),
+                new Candidate("Rohit", 6.8, 65),
+                new Candidate("Meena", 6.0, 90), // Ineligible (cgpa < 6.5)
+                new Candidate("Karan", 7.5, 20)
         };
-
         System.out.println(shortlistAndRank(candidates));
     }
 }
