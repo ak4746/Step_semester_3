@@ -36,9 +36,9 @@ This repository contains clean, efficient, and robust Java implementations cover
 
 ```
 Step_semester_3/
-├── WEEK-1/                 # Day 1 Live-Coding Practice Problems
+├── WEEK-1/                 # Week 1 Live-Coding Practice Problems
 ├── Week-1-Assignments/     # Week 1 Graded Assignment Solutions
-├── WEEK-2/                 # Day 2 Live-Coding Practice Problems
+├── WEEK-2/                 # Week 2 Live-Coding Practice Problems
 ├── Week-2-Assignments/     # Week 2 Graded Assignment Solutions
 ├── WEEK-4/                 # Week 4 Live-Coding Practice Problems (LeetCode Style)
 ├── Week-4-Assignments/     # Week 4 Advanced Algorithmic Assignments
