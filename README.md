@@ -18,6 +18,7 @@ A curated collection of Java solutions, live-coding practice sessions, and grade
   - [Week 4: Advanced Arrays & Two-Pointer Patterns](#week-4-advanced-arrays--two-pointer-patterns)
   - [Week 5: 2D Grids, OOP & Ranking Engines](#week-5-2d-grids-oop--ranking-engines)
   - [Week 6: Object-Oriented Programming (OOP) Fundamentals](#week-6-object-oriented-programming-oop-fundamentals)
+  - [Week 7: Advanced Encapsulation & Immutability](#week-7-advanced-encapsulation--immutability)
 - [How to Compile and Run](#-how-to-compile-and-run)
 - [Author & License](#-author--license)
 
@@ -28,7 +29,7 @@ A curated collection of Java solutions, live-coding practice sessions, and grade
 This repository contains clean, efficient, and robust Java implementations covering:
 - **Core Algorithms & Data Structures**: Arrays, Strings, HashMaps, Two Pointers, Sliding Window, Prefix Sums, Kadane's Algorithm, Binary Search.
 - **Data Parsing & Sanitization**: CSV parsing, regex-free custom tokenizers, input normalization, masking, and multi-stage validators.
-- **Object-Oriented Programming (OOP)**: Encapsulation, Constructor Chaining (`this(...)`), Object References vs Equality, Static vs Instance Fields/Methods, and `Comparable<T>` custom sorting.
+- **Object-Oriented Programming (OOP)**: Encapsulation, Immutability, Constructor Chaining (`this(...)`), Object References vs Equality, Static vs Instance Fields/Methods, and `Comparable<T>` custom sorting.
 
 ---
 
@@ -46,6 +47,7 @@ Step_semester_3/
 ├── Week-5-Assignments/     # Week 5 Domain-Specific Ranking & Grid Assignments
 ├── WEEK-6/                 # Week 6 Live-Coding Practice Problems (OOP Fundamentals)
 ├── Week-6-Assignments/     # Week 6 Graded OOP Assignment Solutions
+├── WEEK-7/                 # Week 7 Encapsulation & Immutability Problems
 ├── README.md               # Repository Documentation
 └── LICENSE                 # License
 ```
@@ -163,6 +165,19 @@ Step_semester_3/
 
 ---
 
+### Week 7: Advanced Encapsulation & Immutability
+
+#### 🔹 Problems (`WEEK-7/`)
+| Problem | File | Key Concepts |
+| :--- | :--- | :--- |
+| **Problem 1: The Piggy Bank** | [`PiggyBank.java`](./WEEK-7/PiggyBank.java) | Read-only balance checking, controlled deposit/withdrawal guards, final identifier |
+| **Problem 2: The Quiz Scorecard** | [`Scorecard.java`](./WEEK-7/Scorecard.java) | Private internal boolean array, sequential answer recorder, score calculation |
+| **Problem 3: The Nickname Tag** | [`NameTag.java`](./WEEK-7/NameTag.java) | Immutable class design, final split fields, nickname generator |
+| **Problem 4: The Locker Code** | [`Locker.java`](./WEEK-7/Locker.java) | Write-only secret combination, secure old-code authentication before update |
+| **Problem 5: The Attendance Sheet** | [`AttendanceSheet.java`](./WEEK-7/AttendanceSheet.java) | Encapsulated attendance roster, deduplicated registration, presence lookup |
+
+---
+
 ## 🛠️ How to Compile and Run
 
 Make sure you have **JDK 17+** (JDK 21 or 25 recommended) installed on your system.
@@ -177,13 +192,13 @@ cd Step_semester_3
 Navigate to the root directory and execute:
 
 ```bash
+# Example: Running Piggy Bank from WEEK-7
+javac WEEK-7/PiggyBank.java
+java -cp WEEK-7 PiggyBank
+
 # Example: Running Book Inventory from Week-6-Assignments
 javac Week-6-Assignments/BookInventory.java
 java -cp Week-6-Assignments BookInventory
-
-# Example: Running Payroll Account from Week-6-Assignments
-javac Week-6-Assignments/PayrollAccount.java
-java -cp Week-6-Assignments PayrollAccount
 
 # Example: Running 3Sum from Week-4-Assignments
 javac Week-4-Assignments/ThreeSum.java
@@ -203,6 +218,7 @@ javac WEEK-5/*.java
 javac Week-5-Assignments/*.java
 javac WEEK-6/*.java
 javac Week-6-Assignments/*.java
+javac WEEK-7/*.java
 ```
 
 ---
