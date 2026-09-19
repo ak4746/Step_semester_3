@@ -48,7 +48,7 @@ Step_semester_3/
 ├── WEEK-6/                 # Week 6 Live-Coding Practice Problems (OOP Fundamentals)
 ├── Week-6-Assignments/     # Week 6 Graded OOP Assignment Solutions
 ├── WEEK-7/                 # Week 7 Encapsulation & Immutability Live Problems
-├── WEEK-7-Assignments/     # Week 7 Graded Encapsulation & Access Control Assignments
+├── Week-7-Assignments/     # Week 7 Graded Encapsulation & Access Control Assignments
 ├── README.md               # Repository Documentation
 └── LICENSE                 # License
 ```
@@ -177,14 +177,14 @@ Step_semester_3/
 | **Problem 4: The Locker Code** | [`Locker.java`](./WEEK-7/Locker.java) | Write-only secret combination, secure old-code authentication before update |
 | **Problem 5: The Attendance Sheet** | [`AttendanceSheet.java`](./WEEK-7/AttendanceSheet.java) | Encapsulated attendance roster, deduplicated registration, presence lookup |
 
-#### 🔹 Assignment Solutions (`WEEK-7-Assignments/`)
+#### 🔹 Assignment Solutions (`Week-7-Assignments/`)
 | Problem | File | Key Concepts |
 | :--- | :--- | :--- |
-| **Problem 1: The Health Bar** | [`Character.java`](./WEEK-7-Assignments/Character.java) | Health clamping ($0$ to `maxHealth`), damage and heal methods, final max health |
-| **Problem 2: The Playlist** | [`Playlist.java`](./WEEK-7-Assignments/Playlist.java) | Defensive array copying (`getSongs()`), preventing external mutation |
-| **Problem 3: The Password Checker** | [`PasswordChecker.java`](./WEEK-7-Assignments/PasswordChecker.java) | Write-only password storage, strength classification (`Weak`, `Medium`, `Strong`) |
-| **Problem 4: The Traffic Light** | [`TrafficLight.java`](./WEEK-7-Assignments/TrafficLight.java) | Sequential state progression (`RED` $\to$ `GREEN` $\to$ `YELLOW` $\to$ `RED`), final ID |
-| **Problem 5: The Shopping Cart** | [`Cart.java`](./WEEK-7-Assignments/Cart.java) | Private item price array, dynamic total calculation on request, item count tracking |
+| **Problem 1: The Health Bar** | [`Character.java`](./Week-7-Assignments/Character.java) | Health clamping ($0$ to `maxHealth`), damage and heal methods, final max health |
+| **Problem 2: The Playlist** | [`Playlist.java`](./Week-7-Assignments/Playlist.java) | Defensive array copying (`getSongs()`), preventing external mutation |
+| **Problem 3: The Password Checker** | [`PasswordChecker.java`](./Week-7-Assignments/PasswordChecker.java) | Write-only password storage, strength classification (`Weak`, `Medium`, `Strong`) |
+| **Problem 4: The Traffic Light** | [`TrafficLight.java`](./Week-7-Assignments/TrafficLight.java) | Sequential state progression (`RED` $\to$ `GREEN` $\to$ `YELLOW` $\to$ `RED`), final ID |
+| **Problem 5: The Shopping Cart** | [`Cart.java`](./Week-7-Assignments/Cart.java) | Private item price array, dynamic total calculation on request, item count tracking |
 
 ---
 
@@ -202,13 +202,13 @@ cd Step_semester_3
 Navigate to the root directory and execute:
 
 ```bash
-# Example: Running Character Health Bar from WEEK-7-Assignments
-javac WEEK-7-Assignments/Character.java
-java -cp WEEK-7-Assignments Character
+# Example: Running Character Health Bar from Week-7-Assignments
+javac Week-7-Assignments/Character.java
+java -cp Week-7-Assignments Character
 
-# Example: Running Playlist from WEEK-7-Assignments
-javac WEEK-7-Assignments/Playlist.java
-java -cp WEEK-7-Assignments Playlist
+# Example: Running Playlist from Week-7-Assignments
+javac Week-7-Assignments/Playlist.java
+java -cp Week-7-Assignments Playlist
 
 # Example: Running Piggy Bank from WEEK-7
 javac WEEK-7/PiggyBank.java
@@ -233,7 +233,7 @@ javac Week-5-Assignments/*.java
 javac WEEK-6/*.java
 javac Week-6-Assignments/*.java
 javac WEEK-7/*.java
-javac WEEK-7-Assignments/*.java
+javac Week-7-Assignments/*.java
 ```
 
 ---
