@@ -29,7 +29,7 @@ A curated collection of Java solutions, live-coding practice sessions, and grade
 This repository contains clean, efficient, and robust Java implementations covering:
 - **Core Algorithms & Data Structures**: Arrays, Strings, HashMaps, Two Pointers, Sliding Window, Prefix Sums, Kadane's Algorithm, Binary Search.
 - **Data Parsing & Sanitization**: CSV parsing, regex-free custom tokenizers, input normalization, masking, and multi-stage validators.
-- **Object-Oriented Programming (OOP)**: Encapsulation, Immutability, Constructor Chaining (`this(...)`), Object References vs Equality, Static vs Instance Fields/Methods, and `Comparable<T>` custom sorting.
+- **Object-Oriented Programming (OOP)**: Encapsulation, Immutability, Constructor Chaining (`this(...)`), Object References vs Equality, Static vs Instance Fields/Methods, Defensive Copies, and `Comparable<T>` custom sorting.
 
 ---
 
@@ -47,7 +47,8 @@ Step_semester_3/
 ├── Week-5-Assignments/     # Week 5 Domain-Specific Ranking & Grid Assignments
 ├── WEEK-6/                 # Week 6 Live-Coding Practice Problems (OOP Fundamentals)
 ├── Week-6-Assignments/     # Week 6 Graded OOP Assignment Solutions
-├── WEEK-7/                 # Week 7 Encapsulation & Immutability Problems
+├── WEEK-7/                 # Week 7 Encapsulation & Immutability Live Problems
+├── WEEK-7-Assignments/     # Week 7 Graded Encapsulation & Access Control Assignments
 ├── README.md               # Repository Documentation
 └── LICENSE                 # License
 ```
@@ -167,7 +168,7 @@ Step_semester_3/
 
 ### Week 7: Advanced Encapsulation & Immutability
 
-#### 🔹 Problems (`WEEK-7/`)
+#### 🔹 Live-Coding Problems (`WEEK-7/`)
 | Problem | File | Key Concepts |
 | :--- | :--- | :--- |
 | **Problem 1: The Piggy Bank** | [`PiggyBank.java`](./WEEK-7/PiggyBank.java) | Read-only balance checking, controlled deposit/withdrawal guards, final identifier |
@@ -175,6 +176,15 @@ Step_semester_3/
 | **Problem 3: The Nickname Tag** | [`NameTag.java`](./WEEK-7/NameTag.java) | Immutable class design, final split fields, nickname generator |
 | **Problem 4: The Locker Code** | [`Locker.java`](./WEEK-7/Locker.java) | Write-only secret combination, secure old-code authentication before update |
 | **Problem 5: The Attendance Sheet** | [`AttendanceSheet.java`](./WEEK-7/AttendanceSheet.java) | Encapsulated attendance roster, deduplicated registration, presence lookup |
+
+#### 🔹 Assignment Solutions (`WEEK-7-Assignments/`)
+| Problem | File | Key Concepts |
+| :--- | :--- | :--- |
+| **Problem 1: The Health Bar** | [`Character.java`](./WEEK-7-Assignments/Character.java) | Health clamping ($0$ to `maxHealth`), damage and heal methods, final max health |
+| **Problem 2: The Playlist** | [`Playlist.java`](./WEEK-7-Assignments/Playlist.java) | Defensive array copying (`getSongs()`), preventing external mutation |
+| **Problem 3: The Password Checker** | [`PasswordChecker.java`](./WEEK-7-Assignments/PasswordChecker.java) | Write-only password storage, strength classification (`Weak`, `Medium`, `Strong`) |
+| **Problem 4: The Traffic Light** | [`TrafficLight.java`](./WEEK-7-Assignments/TrafficLight.java) | Sequential state progression (`RED` $\to$ `GREEN` $\to$ `YELLOW` $\to$ `RED`), final ID |
+| **Problem 5: The Shopping Cart** | [`Cart.java`](./WEEK-7-Assignments/Cart.java) | Private item price array, dynamic total calculation on request, item count tracking |
 
 ---
 
@@ -192,13 +202,17 @@ cd Step_semester_3
 Navigate to the root directory and execute:
 
 ```bash
+# Example: Running Character Health Bar from WEEK-7-Assignments
+javac WEEK-7-Assignments/Character.java
+java -cp WEEK-7-Assignments Character
+
+# Example: Running Playlist from WEEK-7-Assignments
+javac WEEK-7-Assignments/Playlist.java
+java -cp WEEK-7-Assignments Playlist
+
 # Example: Running Piggy Bank from WEEK-7
 javac WEEK-7/PiggyBank.java
 java -cp WEEK-7 PiggyBank
-
-# Example: Running Book Inventory from Week-6-Assignments
-javac Week-6-Assignments/BookInventory.java
-java -cp Week-6-Assignments BookInventory
 
 # Example: Running 3Sum from Week-4-Assignments
 javac Week-4-Assignments/ThreeSum.java
@@ -219,6 +233,7 @@ javac Week-5-Assignments/*.java
 javac WEEK-6/*.java
 javac Week-6-Assignments/*.java
 javac WEEK-7/*.java
+javac WEEK-7-Assignments/*.java
 ```
 
 ---
