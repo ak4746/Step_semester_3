@@ -19,6 +19,7 @@ A curated collection of Java solutions, live-coding practice sessions, and grade
   - [Week 5: 2D Grids, OOP & Ranking Engines](#week-5-2d-grids-oop--ranking-engines)
   - [Week 6: Object-Oriented Programming (OOP) Fundamentals](#week-6-object-oriented-programming-oop-fundamentals)
   - [Week 7: Advanced Encapsulation & Immutability](#week-7-advanced-encapsulation--immutability)
+  - [Week 8: Inheritance & Polymorphism](#week-8-inheritance--polymorphism)
 - [How to Compile and Run](#-how-to-compile-and-run)
 - [Author & License](#-author--license)
 
@@ -29,7 +30,7 @@ A curated collection of Java solutions, live-coding practice sessions, and grade
 This repository contains clean, efficient, and robust Java implementations covering:
 - **Core Algorithms & Data Structures**: Arrays, Strings, HashMaps, Two Pointers, Sliding Window, Prefix Sums, Kadane's Algorithm, Binary Search.
 - **Data Parsing & Sanitization**: CSV parsing, regex-free custom tokenizers, input normalization, masking, and multi-stage validators.
-- **Object-Oriented Programming (OOP)**: Encapsulation, Immutability, Constructor Chaining (`this(...)`), Object References vs Equality, Static vs Instance Fields/Methods, Defensive Copies, and `Comparable<T>` custom sorting.
+- **Object-Oriented Programming (OOP)**: Encapsulation, Immutability, Constructor Chaining (`this(...)`), Object References vs Equality, Static vs Instance Fields/Methods, Defensive Copies, Inheritance, Polymorphism, Abstract Classes, and `Comparable<T>` custom sorting.
 
 ---
 
@@ -49,6 +50,8 @@ Step_semester_3/
 ├── Week-6-Assignments/     # Week 6 Graded OOP Assignment Solutions
 ├── WEEK-7/                 # Week 7 Encapsulation & Immutability Live Problems
 ├── Week-7-Assignments/     # Week 7 Graded Encapsulation & Access Control Assignments
+├── WEEK-8/                 # Week 8 Inheritance & Polymorphism Problems
+├── Week-8-Assignments/     # Week 8 Graded Inheritance & Polymorphism Assignments
 ├── README.md               # Repository Documentation
 └── LICENSE                 # License
 ```
@@ -188,6 +191,29 @@ Step_semester_3/
 
 ---
 
+### Week 8: Inheritance & Polymorphism
+
+#### 🔹 Live Problems (`WEEK-8/`)
+| Problem | File | Key Concepts |
+| :--- | :--- | :--- |
+| **Problem 1: Payment System Fee Calculation** | [`PaymentFeeCalculator.java`](./WEEK-8/PaymentFeeCalculator.java) | Abstract `Payment` class, subclass fee calculations (`CARD`, `WALLET`, `BANKTRANSFER`), polymorphic processing |
+| **Problem 2: Library Item Due Date Calculator** | [`LibraryDueDateCalculator.java`](./WEEK-8/LibraryDueDateCalculator.java) | Abstract `LibraryItem`, dynamic duration dispatch (`BOOK`, `DVD`, `MAGAZINE`), `LocalDate` operations |
+| **Problem 3: Delivery Fee Calculator** | [`DeliveryFeeCalculator.java`](./WEEK-8/DeliveryFeeCalculator.java) | Tiered pricing models (`STANDARD`, `EXPRESS`, `INTERNATIONAL`), base and variable rate overriding |
+| **Problem 4: Examination Question Grader** | [`ExamQuestionGrader.java`](./WEEK-8/ExamQuestionGrader.java) | Abstract `ExamQuestion`, specialized grading algorithms (`MCQ`, `TF`, `ESSAY`), keyword evaluation |
+| **Problem 5: Public Transport Fare Calculator** | [`TransportFareCalculator.java`](./WEEK-8/TransportFareCalculator.java) | Abstract `TransportJourney`, fare calculation with limits/multipliers (`BUS`, `TRAIN`, `METRO`) |
+| **Quiz & Concept Notes** | [`QUIZ_AND_CONCEPTS.md`](./WEEK-8/QUIZ_AND_CONCEPTS.md) | Comprehensive answers and technical explanations for Week 8 Quiz and Concept questions |
+
+#### 🔹 Assignment Solutions (`Week-8-Assignments/`)
+| Problem | File | Key Concepts |
+| :--- | :--- | :--- |
+| **Problem 1: The Canteen Billing Counter** | [`CanteenBillingCounter.java`](./Week-8-Assignments/CanteenBillingCounter.java) | Abstract `CustomerBill`, discount & surcharge strategies (`STUDENT`, `STAFF`, `GUEST`) |
+| **Problem 2: The Campus Parking Charge Calculator** | [`CampusParkingChargeCalculator.java`](./Week-8-Assignments/CampusParkingChargeCalculator.java) | Tiered & minimum charge parking models (`BIKE`, `CAR`, `TRUCK`) |
+| **Problem 3: The Hostel Electricity Bill** | [`HostelElectricityBill.java`](./Week-8-Assignments/HostelElectricityBill.java) | Room-specific tariff structures (`SINGLE`, `SHARED`, `AC`), occupant split computation |
+| **Problem 4: The Festival Bonus Calculator** | [`FestivalBonusCalculator.java`](./Week-8-Assignments/FestivalBonusCalculator.java) | Percentage vs flat bonus schemes (`FULLTIME`, `PARTTIME`, `INTERN`) |
+| **Problem 5: The Streaming Plan Renewal Reminder** | [`StreamingPlanRenewalReminder.java`](./Week-8-Assignments/StreamingPlanRenewalReminder.java) | Subscription plan durations (`BASIC`, `STANDARD`, `PREMIUM`), `LocalDate.plusDays()` |
+
+---
+
 ## 🛠️ How to Compile and Run
 
 Make sure you have **JDK 17+** (JDK 21 or 25 recommended) installed on your system.
@@ -202,6 +228,14 @@ cd Step_semester_3
 Navigate to the root directory and execute:
 
 ```bash
+# Example: Running Canteen Billing Counter from Week-8-Assignments
+javac Week-8-Assignments/CanteenBillingCounter.java
+java -cp Week-8-Assignments CanteenBillingCounter
+
+# Example: Running Payment Fee Calculator from WEEK-8
+javac WEEK-8/PaymentFeeCalculator.java
+java -cp WEEK-8 PaymentFeeCalculator
+
 # Example: Running Character Health Bar from Week-7-Assignments
 javac Week-7-Assignments/Character.java
 java -cp Week-7-Assignments Character
@@ -234,6 +268,8 @@ javac WEEK-6/*.java
 javac Week-6-Assignments/*.java
 javac WEEK-7/*.java
 javac Week-7-Assignments/*.java
+javac WEEK-8/*.java
+javac Week-8-Assignments/*.java
 ```
 
 ---
