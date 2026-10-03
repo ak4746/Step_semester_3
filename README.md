@@ -20,6 +20,7 @@ A curated collection of Java solutions, live-coding practice sessions, and grade
   - [Week 6: Object-Oriented Programming (OOP) Fundamentals](#week-6-object-oriented-programming-oop-fundamentals)
   - [Week 7: Advanced Encapsulation & Immutability](#week-7-advanced-encapsulation--immutability)
   - [Week 8: Inheritance & Polymorphism](#week-8-inheritance--polymorphism)
+  - [Week 9: Abstraction & Interfaces](#week-9-abstraction--interfaces)
 - [How to Compile and Run](#-how-to-compile-and-run)
 - [Author & License](#-author--license)
 
@@ -52,6 +53,8 @@ Step_semester_3/
 ├── Week-7-Assignments/     # Week 7 Graded Encapsulation & Access Control Assignments
 ├── WEEK-8/                 # Week 8 Inheritance & Polymorphism Problems
 ├── Week-8-Assignments/     # Week 8 Graded Inheritance & Polymorphism Assignments
+├── WEEK-9/                 # Week 9 Abstraction & Polymorphic Reporting Problems
+├── Week-9-Assignments/     # Week 9 Graded Abstraction & Interface Assignments
 ├── README.md               # Repository Documentation
 └── LICENSE                 # License
 ```
@@ -214,6 +217,29 @@ Step_semester_3/
 
 ---
 
+### Week 9: Abstraction & Interfaces
+
+#### 🔹 Live-Coding Problems (`WEEK-9/`)
+| Problem | File | Key Concepts |
+| :--- | :--- | :--- |
+| **Problem 1: Garden Plot Area Report** | [`GardenPlotAreaReport.java`](./WEEK-9/GardenPlotAreaReport.java) | Abstract `GardenPlot` base class, dynamic area calculation dispatch (`CIRCLE`, `RECTANGLE`, `TRIANGLE`) |
+| **Problem 2: Weekly Staff Pay** | [`WeeklyStaffPay.java`](./WEEK-9/WeeklyStaffPay.java) | Abstract `Staff` class preventing direct instantiation, overtime & stipend rules (`FULLTIME`, `HOURLY`, `INTERN`) |
+| **Problem 3: Library Late Fine Counter** | [`LibraryLateFineCounter.java`](./WEEK-9/LibraryLateFineCounter.java) | Abstract `LibraryItem`, item-specific fine rules and caps (`BOOK`, `DVD`, `MAGAZINE`) |
+| **Problem 4: Electricity Connection Billing** | [`ElectricityConnectionBilling.java`](./WEEK-9/ElectricityConnectionBilling.java) | Abstract `ElectricityConnection`, tiered and minimum charge billing (`HOME`, `SHOP`, `FACTORY`) |
+| **Problem 5: Travel Booking with a Common Fee** | [`TravelBookingWithCommonFee.java`](./WEEK-9/TravelBookingWithCommonFee.java) | Abstract `TravelBooking`, shared single-point booking fee constant, mode-specific base rates (`BUS`, `TRAIN`, `FLIGHT`) |
+| **Quiz & Concept Notes** | [`QUIZ_AND_CONCEPTS.md`](./WEEK-9/QUIZ_AND_CONCEPTS.md) | Comprehensive answers and technical explanations for Week 9 Quiz on Abstraction and Interfaces |
+
+#### 🔹 Assignment Solutions (`Week-9-Assignments/`)
+| Problem | File | Key Concepts |
+| :--- | :--- | :--- |
+| **Problem 1: Movie Ticket Counter** | [`MovieTicketCounter.java`](./Week-9-Assignments/MovieTicketCounter.java) | Abstract `MovieTicket`, single-point shared convenience fee, seat price logic (`REGULAR`, `PREMIUM`, `RECLINER`) |
+| **Problem 2: Parcel Shipping Desk** | [`ParcelShippingDesk.java`](./Week-9-Assignments/ParcelShippingDesk.java) | Abstract `Parcel`, capability separation via `Insurable` interface for `EXPRESS` and `FRAGILE` |
+| **Problem 3: College Fee Counter** | [`CollegeFeeCounter.java`](./Week-9-Assignments/CollegeFeeCounter.java) | Abstract `Student`, shared transport fee via `BusUser` interface without instanceof checks on concrete types |
+| **Problem 4: City Cab Fare Meter** | [`CityCabFareMeter.java`](./Week-9-Assignments/CityCabFareMeter.java) | Abstract `Cab`, minimum fare guarantee, `NightServiceable` interface with 20% surcharge, rejection logic for Mini |
+| **Problem 5: Home Appliance Energy Report** | [`HomeApplianceEnergyReport.java`](./Week-9-Assignments/HomeApplianceEnergyReport.java) | Abstract `Appliance`, `SaverModeSupport` interface (-25% energy consumption), error reporting for unsupported mode |
+
+---
+
 ## 🛠️ How to Compile and Run
 
 Make sure you have **JDK 17+** (JDK 21 or 25 recommended) installed on your system.
@@ -270,6 +296,8 @@ javac WEEK-7/*.java
 javac Week-7-Assignments/*.java
 javac WEEK-8/*.java
 javac Week-8-Assignments/*.java
+javac WEEK-9/*.java
+javac Week-9-Assignments/*.java
 ```
 
 ---
