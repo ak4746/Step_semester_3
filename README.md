@@ -21,6 +21,7 @@ A curated collection of Java solutions, live-coding practice sessions, and grade
   - [Week 7: Advanced Encapsulation & Immutability](#week-7-advanced-encapsulation--immutability)
   - [Week 8: Inheritance & Polymorphism](#week-8-inheritance--polymorphism)
   - [Week 9: Abstraction & Interfaces](#week-9-abstraction--interfaces)
+  - [Week 10: Category C Assessment](#week-10-category-c-assessment)
 - [How to Compile and Run](#-how-to-compile-and-run)
 - [Author & License](#-author--license)
 
@@ -238,6 +239,23 @@ Step_semester_3/
 | **Problem 4: City Cab Fare Meter** | [`CityCabFareMeter.java`](./Week-9-Assignments/CityCabFareMeter.java) | Abstract `Cab`, minimum fare guarantee, `NightServiceable` interface with 20% surcharge, rejection logic for Mini |
 | **Problem 5: Home Appliance Energy Report** | [`HomeApplianceEnergyReport.java`](./Week-9-Assignments/HomeApplianceEnergyReport.java) | Abstract `Appliance`, `SaverModeSupport` interface (-25% energy consumption), error reporting for unsupported mode |
 
+### Week 10: Category C Assessment
+
+#### 🔹 Assessment Solutions (`WEEK-10/`)
+| Problem / Section | File | Description |
+| :--- | :--- | :--- |
+| **All Solutions & Answers** | [`ANSWERS.md`](./WEEK-10/ANSWERS.md) | Complete solutions for Part A (Coding), Part B (Quiz), and Part C (Concepts) |
+| **Problem 1: Vowel and Consonant Counter** | [`VowelConsonantCounter.java`](./WEEK-10/VowelConsonantCounter.java) | Case-insensitive character inspection and vowel/consonant counter |
+| **Problem 2: Word Reverser & Palindrome** | [`WordReverserPalindrome.java`](./WEEK-10/WordReverserPalindrome.java) | Mutable `StringBuilder` reversal and palindrome checker |
+| **Problem 3: Even and Odd Numbers in a List** | [`EvenOddCounter.java`](./WEEK-10/EvenOddCounter.java) | Modulo-based integer parity counter across lists |
+| **Problem 4: In-Place Array Reversal** | [`InPlaceArrayReversal.java`](./WEEK-10/InPlaceArrayReversal.java) | Two-pointer in-place token array reversal |
+| **Problem 5: Digit Sum and Number Reversal** | [`DigitSumAndReversal.java`](./WEEK-10/DigitSumAndReversal.java) | Arithmetic extraction for digit sum and reversed integer |
+| **Problem 6: Prime Number Checker** | [`PrimeChecker.java`](./WEEK-10/PrimeChecker.java) | $O(\sqrt{n})$ primality tester |
+| **Problem 7: Factorial Calculation** | [`FactorialCalculator.java`](./WEEK-10/FactorialCalculator.java) | Iterative non-negative integer factorial computation |
+| **Problem 8: Student Grade Assignment** | [`StudentGradeAssignment.java`](./WEEK-10/StudentGradeAssignment.java) | Conditional grade evaluation ladder based on percentage thresholds |
+| **Problem 9: Leap Year Detector** | [`LeapYearDetector.java`](./WEEK-10/LeapYearDetector.java) | Gregorian leap year logical evaluation (divisible by 4, 100, 400) |
+| **Problem 10: Student Result Card Generator** | [`ResultCardGenerator.java`](./WEEK-10/ResultCardGenerator.java) | Object-oriented `Student` class calculating marks average and grades |
+
 ---
 
 ## 🛠️ How to Compile and Run
@@ -298,6 +316,7 @@ javac WEEK-8/*.java
 javac Week-8-Assignments/*.java
 javac WEEK-9/*.java
 javac Week-9-Assignments/*.java
+javac WEEK-10/*.java
 ```
 
 ---
