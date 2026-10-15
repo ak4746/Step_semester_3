@@ -21,7 +21,7 @@ A curated collection of Java solutions, live-coding practice sessions, and grade
   - [Week 7: Advanced Encapsulation & Immutability](#week-7-advanced-encapsulation--immutability)
   - [Week 8: Inheritance & Polymorphism](#week-8-inheritance--polymorphism)
   - [Week 9: Abstraction & Interfaces](#week-9-abstraction--interfaces)
-  - [Week 10: Category C Assessment](#week-10-category-c-assessment)
+  - [Week 10: DSA Introduction & Linear Data Structures](#week-10-dsa-introduction--linear-data-structures)
 - [How to Compile and Run](#-how-to-compile-and-run)
 - [Author & License](#-author--license)
 
@@ -56,6 +56,8 @@ Step_semester_3/
 ├── Week-8-Assignments/     # Week 8 Graded Inheritance & Polymorphism Assignments
 ├── WEEK-9/                 # Week 9 Abstraction & Polymorphic Reporting Problems
 ├── Week-9-Assignments/     # Week 9 Graded Abstraction & Interface Assignments
+├── WEEK-10/                # Week 10 Live Assessment: Category C Problems & Concepts
+├── Week-10-Assignments/    # Week 10 Graded Linear Data Structures & Algorithmic Assignments
 ├── README.md               # Repository Documentation
 └── LICENSE                 # License
 ```
@@ -239,7 +241,7 @@ Step_semester_3/
 | **Problem 4: City Cab Fare Meter** | [`CityCabFareMeter.java`](./Week-9-Assignments/CityCabFareMeter.java) | Abstract `Cab`, minimum fare guarantee, `NightServiceable` interface with 20% surcharge, rejection logic for Mini |
 | **Problem 5: Home Appliance Energy Report** | [`HomeApplianceEnergyReport.java`](./Week-9-Assignments/HomeApplianceEnergyReport.java) | Abstract `Appliance`, `SaverModeSupport` interface (-25% energy consumption), error reporting for unsupported mode |
 
-### Week 10: Category C Assessment
+### Week 10: DSA Introduction & Linear Data Structures
 
 #### 🔹 Assessment Solutions (`WEEK-10/`)
 | Problem / Section | File | Description |
@@ -304,6 +306,14 @@ java -cp WEEK-7 PiggyBank
 # Example: Running 3Sum from Week-4-Assignments
 javac Week-4-Assignments/ThreeSum.java
 java -cp Week-4-Assignments ThreeSum
+
+# Example: Running Busiest Bus Row from Week-10-Assignments
+javac Week-10-Assignments/BusiestBusRow.java
+java -cp Week-10-Assignments BusiestBusRow
+
+# Example: Running Vowel and Consonant Counter from WEEK-10
+javac WEEK-10/VowelConsonantCounter.java
+java -cp WEEK-10 VowelConsonantCounter
 ```
 
 ### 3. Batch Compile All Solutions in a Directory
