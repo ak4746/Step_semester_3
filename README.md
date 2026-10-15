@@ -256,6 +256,15 @@ Step_semester_3/
 | **Problem 9: Leap Year Detector** | [`LeapYearDetector.java`](./WEEK-10/LeapYearDetector.java) | Gregorian leap year logical evaluation (divisible by 4, 100, 400) |
 | **Problem 10: Student Result Card Generator** | [`ResultCardGenerator.java`](./WEEK-10/ResultCardGenerator.java) | Object-oriented `Student` class calculating marks average and grades |
 
+#### 🔹 Assignment Solutions (`Week-10-Assignments/`)
+| Problem | File | Key Concepts |
+| :--- | :--- | :--- |
+| **Problem 4: Exam Score Band Counter** | [`ExamScoreBandCounter.java`](./Week-10-Assignments/ExamScoreBandCounter.java) | Binary search lower/upper bound for range queries with duplicates, $O(\log n)$ time, $O(1)$ space |
+| **Problem 6: Class Attendance Tracker** | [`ClassAttendanceTracker.java`](./Week-10-Assignments/ClassAttendanceTracker.java) | Single-pass continuous streak calculation & presence count, $O(n)$ time, $O(1)$ space |
+| **Problem 7: Second-Best Score** | [`SecondBestScore.java`](./Week-10-Assignments/SecondBestScore.java) | Single-pass tracking of top two distinct scores, $O(n)$ time, $O(1)$ space |
+| **Problem 8: Duty Roster Rotation** | [`DutyRosterRotation.java`](./Week-10-Assignments/DutyRosterRotation.java) | Cyclic array rotation via modulo arithmetic $(i + k) \pmod n$, handles $k \le 10^9$ in $O(n)$ time |
+| **Problem 10: Busiest Bus Row** | [`BusiestBusRow.java`](./Week-10-Assignments/BusiestBusRow.java) | 2D array row-wise sum accumulation, tie-breaking by smaller index, $O(r \times c)$ time |
+
 ---
 
 ## 🛠️ How to Compile and Run
@@ -317,6 +326,7 @@ javac Week-8-Assignments/*.java
 javac WEEK-9/*.java
 javac Week-9-Assignments/*.java
 javac WEEK-10/*.java
+javac Week-10-Assignments/*.java
 ```
 
 ---
